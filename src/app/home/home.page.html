@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor = "let article of articles" (click)="plusArticle(article)">
+    <ion-card-header>
+      <img [src]="article.thumnail" alt="">
+      <ion-card-title>{{article.name}}</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+</ion-content>

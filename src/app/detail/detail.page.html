@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{article.name}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-img [src]='article.thumnail'> </ion-img>
+    <ion-card-title>
+     {{article.name}} <br> {{article.price}}
+    </ion-card-title>
+    <ion-card-content>
+        <div [innerHTML]="article.description"> </div>
+    </ion-card-content>
+    <a href="https://wa.me/+2250000000/?text= je suis interessé par ce article:{{article.name}} `-` {{article.price}}">
+    <img style="width :50px ; height :50px" src="../assets/whatsup.jpg" alt="">
+    </a>
+  </ion-card>
+</ion-content>
